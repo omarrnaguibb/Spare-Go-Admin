@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  /* Spare Go Brand & Admin Theme */
+  --bg-base: #F3F1EC;
+  --bg-surface: #FFFFFF;
+  --bg-sidebar: #1F2421;
+  --text-primary: #1F2421;
+  --text-secondary: #5C6460;
+  --text-muted: #8A928D;
+
+  --accent: #B8752E;
+  --accent-hover: #9E6122;
+  --accent-light: #FBF4EC;
+
+  --success: #3F6B58;
+  --success-bg: #EDF5F1;
+  --warning: #A8452F;
+  --warning-bg: #FDF2F0;
+
+  --border: #DFDCD5;
+  --border-light: #ECEAE4;
+}
+
+@theme inline {
+  --color-bg-base: var(--bg-base);
+  --color-bg-surface: var(--bg-surface);
+  --color-bg-sidebar: var(--bg-sidebar);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-light: var(--accent-light);
+  --color-success: var(--success);
+  --color-success-bg: var(--success-bg);
+  --color-warning: var(--warning);
+  --color-warning-bg: var(--warning-bg);
+  --color-border: var(--border);
+  --color-border-light: var(--border-light);
+}
+
+body {
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-ibm-plex-arabic), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+.num-tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #DFDCD5;
+  border-radius: 9999px;
+}
